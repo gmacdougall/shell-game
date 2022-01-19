@@ -222,7 +222,7 @@ Usage:
 GitHub CLI + fzf
 
 ```
-  alias review="gh pr checkout (gh pr list | less | fzf | cut -f1)"
+  gh pr checkout $(gh pr list -S 'review-requested:@me' | cat | column -t -s $'\t' | fzf | cut -d' ' -f1)
 ```
 
 Fuzzy checkout recent branches
