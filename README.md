@@ -156,6 +156,12 @@ Cross-shell, cross-platform prompt helper
 I don't use this prompt, but I recommend it.
 It's probably better than your prompt.
 
+Usage (with zsh):
+
+```
+  eval "$(starship init zsh)"
+```
+
 ---
 
 # direnv
