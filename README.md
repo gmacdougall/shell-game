@@ -234,8 +234,8 @@ GitHub CLI + fzf
 Fuzzy checkout recent branches
 
 ```
-  git checkout $(git for-each-ref --sort=-committerdate refs/heads
-    --format="%(refname:short)!%(committerdate:relative)!%(subject)" | column -ts'!' | fzf | cut -d' ' -f1)
+  git checkout $(git for-each-ref --sort=-committerdate refs/heads \
+    --format='%(refname:short)!%(committerdate:relative)!%(subject)' | column -ts'!' | fzf | cut -d' ' -f1)
 ```
 
 ---
